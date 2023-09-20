@@ -35,6 +35,14 @@ Before starting the application, create an .env file in the root directory based
 
    Open your browser and navigate to [http://localhost:8000/api/v1/](http://localhost:8000/api/v1/). You should see the Swagger UI displaying your API endpoints.
 
+## Running Tests
+
+To run the application tests:
+
+```bash
+docker-compose run web pytest
+```
+
 ## Stopping the application:
 
 To stop the running containers, press `CTRL + C` in the terminal where `docker-compose up` is running.
