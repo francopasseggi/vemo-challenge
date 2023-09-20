@@ -9,6 +9,8 @@ This is a simple To-Do application built with Django and the Django Rest Framewo
 
 ## How to run
 
+Before starting the application, create an .env file in the root directory based on the .env.example file provided. Fill in any required variables.
+
 1. **Build the Docker image**:
 
    ```bash
@@ -22,6 +24,12 @@ This is a simple To-Do application built with Django and the Django Rest Framewo
    ```
 
    This command will first apply any pending migrations and then start the Django development server on port 8000.
+
+   If no user exists in the database, an admin user will be created with the following credentials:
+
+   - Username: admin
+   - Email: admin@example.com
+   - Password: admin
 
 3. **Access the application**:
 
@@ -40,3 +48,4 @@ docker-compose down
 ## Notes:
 
 - This setup is intended for development purposes. For production, consider using a production-ready database, configuring a web server like Gunicorn, and setting up a reverse proxy with Nginx.
+- This dev setup uses basic auth. The postman requests are authorized using the credentials of the admin user. For a production environment, using more sophisticated authorization methods is recommended.
