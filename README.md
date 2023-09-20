@@ -1,4 +1,4 @@
-# Django To-Do Application
+# VEMO Challenge: To-Do Application
 
 This is a simple To-Do application built with Django and the Django Rest Framework.
 
